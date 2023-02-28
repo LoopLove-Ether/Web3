@@ -1,0 +1,180 @@
+/* //width是元素宽度,百分比是指子元素宽度是父元素宽度的百分之多少
+//padding-block是在元素内容和元素边缘之间提供额外空间
+//position用来定位元素布局
+//z-index是指元素层级,用来决定堆叠顺序 */
+.navbar {
+  width: 100%;
+  padding-block: 1.5rem;
+  position: relative;
+  z-index: 111111111;
+}
+
+/* //margin是指外边距的宽度
+//display是在设置元素的布局
+//grid-template-columns是在规定布局后元素的列宽
+//align-items定义布局元素子项在当前布局中的对齐方式
+//justify-content用来设置盒子元素在主轴上的对齐方式 */
+.navbar_container {
+  width: 80%;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.logo {
+  color: var(--icons-color);
+  font-size: 4rem;
+}
+
+.navbar_container_left {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+
+.navbar_container_left_box_input_box {
+  width: 60%;
+  border: 1px solid var(--icons-color);
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+
+.navbar_container_left_box_input_box input {
+  width: 90%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--icons-color);
+}
+
+.search_icon {
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+/* //-------RIGHT */
+/* 五个组件就把网格分成五列 */
+.navbar_container_right {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.5fr 1fr 0.3fr;
+  gap: 1rem;
+  align-items: center;
+  /* align-self: flex-end; */
+}
+
+.navbar_container_right_discover {
+  position: relative;
+  cursor: pointer;
+}
+.navbar_container_right_help {
+  position: relative;
+  cursor: pointer;
+}
+
+.navbar_container_right_discover_box,
+.navbar_container_right_help_box {
+  position: absolute;
+  padding: 1rem 0.5rem;
+  box-shadow: var(--box-shadow);
+  font-size: 1rem;
+  width: 15rem;
+  border-radius: 1rem;
+  background-color: var(--main-bg-color);
+}
+
+.navbar_container_right_notify {
+  position: relative;
+  cursor: pointer;
+}
+
+.notify {
+  font-size: 2rem;
+}
+
+.navbar_container_right_button {
+  position: relative;
+  cursor: pointer;
+}
+
+.navbar_container_right_profile_box {
+  position: relative;
+  cursor: pointer;
+}
+
+.navbar_container_right_profile {
+  border-radius: 50%;
+}
+
+/* 我们不想在PC上显示菜单按钮,只想在移动设备上显示 */
+.navbar_container_right_menuBtn {
+  display: none;
+}
+
+.menuIcon {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+/* /////------SIDEBAR */
+/* overflow-y设置为auto的原因是我们希望用户在x轴上滚动 */
+.sideBar {
+  position: fixed;
+  top: 0;
+  width: 24rem;
+  background-color: var(--main-bg-color);
+  box-shadow: var(--box-shadow);
+  height: 100vh;
+  overflow-y: auto;
+  display: none;
+  z-index: 11111;
+}
+
+/* 我们不想要显示滚动条 */
+.sideBar::-webkit-scrollbar {
+  display: none;
+}
+
+/* 移动设备 */
+/* 我们决定在侧边栏中隐藏一部分组件 */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .navbar_container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .navbar_container_left {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar_container_right {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .navbar_container_right_menuBtn {
+    display: block;
+  }
+
+  .navbar_container_left_box_input_box {
+    display: none;
+  }
+  .navbar_container_right_discover {
+    display: none;
+  }
+
+  .navbar_container_right_help {
+    display: none;
+  }
+
+  .navbar_container_right_button {
+    display: none;
+  }
+
+  .sideBar {
+    display: block;
+  }
+}
