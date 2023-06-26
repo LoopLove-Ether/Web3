@@ -30,55 +30,55 @@ const SideBar = ({ setOpenSideMenu, currentAccount, connectWallet }) => {
   //--------DISCOVER NAVIGATION MENU
   const discover = [
     {
-      name: "Collection",
+      name: "市场",
       link: "collection",
     },
     {
-      name: "Search",
+      name: "搜索",
       link: "search",
     },
     {
-      name: "Author Profile",
+      name: "卖家信息",
       link: "author-profile",
     },
     {
-      name: "NFT Details",
+      name: "商品细节",
       link: "NFT-details",
     },
     {
-      name: "Account Setting",
+      name: "账户设置",
       link: "account-setting",
     },
+    // {
+    //   name: "Connect Wallet",
+    //   link: "connect-wallet",
+    // },
     {
-      name: "Connect Wallet",
-      link: "connect-wallet",
-    },
-    {
-      name: "Blog",
+      name: "博客",
       link: "blog",
     },
   ];
   //------HELP CENTER MENU
   const helpCenter = [
     {
-      name: "About",
+      name: "关于我们",
       link: "about",
     },
     {
-      name: "Contact Us",
+      name: "联系我们",
       link: "contact-us",
     },
     {
-      name: "Sign Up",
+      name: "注册(可选)",
       link: "sign-up",
     },
     {
-      name: "Sign In",
+      name: "登陆(可选)",
       link: "sign-in",
     },
     //subscription我们想要设置为可选的,这样可以为NFT创建者提供额外功能
     {
-      name: "Subscription",
+      name: "订阅",
       link: "subscription",
     },
   ];

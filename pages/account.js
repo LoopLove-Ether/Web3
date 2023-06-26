@@ -27,10 +27,9 @@ const account = () => {
   return (
     <div className={Style.account}>
       <div className={Style.account_info}>
-        <h1>Profile settings</h1>
+        <h1>个人资料设置</h1>
         <p>
-          You can set preferred display name, create your profile URL and manage
-          other personal settings.
+          您可以设置首选显示名称、创建您的个人资料URL并进行管理其他个人设置。
         </p>
       </div>
 
@@ -44,7 +43,7 @@ const account = () => {
             height={150}
             className={Style.account_box_img_img}
           />
-          <p className={Style.account_box_img_para}>Change Image</p>
+          <p className={Style.account_box_img_para}>修改头像</p>
         </div>
         <div className={Style.account_box_form}>
           <Form />

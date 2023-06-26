@@ -12,11 +12,8 @@ import { DiJqueryLogo } from "react-icons/di";
 //INTERNAL IMPORT
 import Style from "./NavBar.module.css";
 import { Discover, HelpCenter, Notification, Profile, SideBar } from "./index";
-import { Button, Error } from "../componentsindex";
+import { Button } from "../componentsindex";
 import images from "../../img";
-
-//IMPORT FROM SMART CONTRACT
-import { NFTMarketplaceContext } from "../../Context/NFTMarketplaceContext";
 
 const NavBar = () => {
   //----USESTATE COMPONNTS
@@ -105,12 +102,6 @@ const NavBar = () => {
     }
   };
 
-  //和index.js中类似的操作
-  //SMART CONTRACT SECTION
-  const { currentAccount, connectWallet, openError } = useContext(
-    NFTMarketplaceContext
-  );
-
   return (
     <div className={Style.navbar}>
       <div className={Style.navbar_container}>
@@ -129,7 +120,7 @@ const NavBar = () => {
           {/* 搜索输入框 */}
           <div className={Style.navbar_container_left_box_input}>
             <div className={Style.navbar_container_left_box_input_box}>
-              <input type="text" placeholder="Search NFT" />
+              <input type="text" placeholder="寻找你想要的商品" />
               <BsSearch onClick={() => {}} className={Style.search_icon} />
             </div>
           </div>
@@ -139,7 +130,7 @@ const NavBar = () => {
         <div className={Style.navbar_container_right}>
           <div className={Style.navbar_container_right_discover}>
             {/* DISCOVER MENU */}
-            <p onClick={(e) => openDiscover()}>Discover</p>
+            <p onClick={(e) => openDiscover()}>发现</p>
             {/* discover如果为false,则这个组件不会显示 */}
             {discover && (
               <div className={Style.navbar_container_right_discover_box}>
@@ -150,7 +141,7 @@ const NavBar = () => {
 
           {/* HELP CENTER MENU */}
           <div className={Style.navbar_container_right_help}>
-            <p onClick={(e) => openHelpCenter()}>Help Center</p>
+            <p onClick={(e) => openHelpCenter()}>帮助中心</p>
             {help && (
               <div className={Style.navbar_container_right_help_box}>
                 <HelpCenter />
@@ -167,21 +158,6 @@ const NavBar = () => {
             {notification && <Notification />}
           </div>
 
-          {/* 添加一个动态按钮,如果用户没有连接到应用程序中,我们希望显示一个不同的按钮来连接 */}
-          {/* 如果用户已经连接到应用程序中,我们想要显示另一个不同的按钮来创建NFT */}
-          {/* 希望在使用创建NFT按钮时将用户重定向到UploadNFT页面 */}
-          {/* CREATE BUTTON SECTION */}
-          <div className={Style.navbar_container_right_button}>
-            {currentAccount == "" ? (
-              <Button btnName="Connect" handleClick={() => connectWallet()} />
-            ) : (
-              <Button
-                btnName="Create"
-                handleClick={() => router.push("/uploadNFT")}
-              />
-            )}
-          </div>
-
           {/* USER PROFILE */}
 
           <div className={Style.navbar_container_right_profile_box}>
@@ -195,8 +171,7 @@ const NavBar = () => {
                 className={Style.navbar_container_right_profile}
               />
               {/* 稍后，当我们连接到后端时，我们将在这个组件中发送道具 */}
-              {/* 动态数据我们可以轻松地删除/使用 */}
-              {profile && <Profile currentAccount={currentAccount} />}
+              {profile && <Profile />}
             </div>
           </div>
 
@@ -215,15 +190,9 @@ const NavBar = () => {
       {openSideMenu && (
         <div className={Style.sideBar}>
           {/* 通过一个十字按钮控制sidebar的开关 */}
-          <SideBar
-            setOpenSideMenu={setOpenSideMenu}
-            currentAccount={currentAccount}
-            connectWallet={connectWallet}
-          />
+          <SideBar setOpenSideMenu={setOpenSideMenu} />
         </div>
       )}
-
-      {openError && <Error />}
     </div>
   );
 };

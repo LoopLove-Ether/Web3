@@ -47,7 +47,7 @@ const DaysComponents = ({ el, i }) => {
         </div>
 
         <div className={Style.daysComponent_box_title}>
-          <h2>Amazing Collection</h2>
+          <h2>神奇收藏品</h2>
           <div className={Style.daysComponent_box_title_info}>
             <div className={Style.daysComponent_box_title_info_profile}>
               <Image
@@ -59,9 +59,9 @@ const DaysComponents = ({ el, i }) => {
               />
 
               <p>
-                Creator
+                卖家
                 <span>
-                  Kyrie Irving
+                  刘宝梁
                   <small>
                     <MdVerified />
                   </small>

@@ -13,11 +13,11 @@ const BigNFTSlider = () => {
   const [idNumber, setIdNumber] = useState(0);
   const sliderData = [
     {
-      title: "Hello NFT",
+      title: "Hello Web3",
       id: 1,
-      name: "Kyrie Irving",
+      name: "刘宝梁",
       collection: "Gym",
-      price: "0064664 ETH",
+      price: "0.64664 ETH",
       like: 243,
       image: images.user1,
       nftImage: images.nft_image_1,
@@ -29,9 +29,9 @@ const BigNFTSlider = () => {
       },
     },
     {
-      title: "Buddy NFT",
+      title: "Buddy",
       id: 2,
-      name: "Kevin Durant",
+      name: "刘宝猪",
       collection: "Home",
       price: "0000004 ETH",
       like: 243,
@@ -47,7 +47,7 @@ const BigNFTSlider = () => {
     {
       title: "Gym NFT",
       id: 3,
-      name: "Lebron James",
+      name: "刘宝蹲",
       collection: "GYm",
       price: "00000064 ETH",
       like: 243,
@@ -61,9 +61,9 @@ const BigNFTSlider = () => {
       },
     },
     {
-      title: "Home NFT",
+      title: "Home",
       id: 4,
-      name: "Stephen Curry",
+      name: "刘宝翘",
       collection: "GYm",
       price: "4664 ETH",
       like: 243,
@@ -112,7 +112,7 @@ const BigNFTSlider = () => {
                 height={50}
               />
               <div className={Style.bigNFTSlider_box_left_creator_profile_img}>
-                <p>Creator</p>
+                <p>卖家</p>
                 <h4>
                   {sliderData[idNumber].name}
                   {""}
@@ -130,7 +130,7 @@ const BigNFTSlider = () => {
               <div
                 className={Style.bigNFTSlider_box_left_creator_collection_info}
               >
-                <p>Collection</p>
+                <p>类别</p>
                 <h4>{sliderData[idNumber].collection}</h4>
               </div>
             </div>
@@ -138,9 +138,9 @@ const BigNFTSlider = () => {
 
           <div className={Style.bigNFTSlider_box_left_bidding}>
             <div className={Style.bigNFTSlider_box_left_bidding_box}>
-              <small>Current Bid</small>
+              <small>当前价格</small>
               <p>
-                {sliderData[idNumber].price} <span>$,221,21</span>
+                {sliderData[idNumber].price} <span>$821,21</span>
               </p>
             </div>
 
@@ -148,7 +148,7 @@ const BigNFTSlider = () => {
               <MdTimer
                 className={Style.bigNFTSlider_box_left_bidding_box_auction}
               />
-              <span>Auction ending in</span>
+              <span>拍卖结束于</span>
             </p>
             <div className={Style.bigNFTSlider_box_left_bidding_box_timer}>
               <div
@@ -181,8 +181,8 @@ const BigNFTSlider = () => {
             </div>
 
             <div className={Style.bigNFTSlider_box_left_button}>
-              <Button btnName="Place" handleClick={() => {}} />
-              <Button btnName="View" handleClick={() => {}} />
+              <Button btnName="出价" handleClick={() => {}} />
+              <Button btnName="参观" handleClick={() => {}} />
             </div>
           </div>
 

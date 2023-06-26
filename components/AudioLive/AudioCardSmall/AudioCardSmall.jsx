@@ -29,11 +29,11 @@ const AudioCardSmall = () => {
         />
 
         <div className={Style.audioPlayer_box_info}>
-          <h4>NFT music #1142</h4>
+          <h4>数字音乐 #1142</h4>
           <div className={Style.audioPlayer_box_info_box}>
             <LikeProfile />
             <div className={Style.audioPlayer_box_info_box_price}>
-              <small>Price</small>
+              <small>价格</small>
               <p>1.00ETH</p>
             </div>
           </div>

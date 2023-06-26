@@ -7,35 +7,25 @@ import Subscription from "../Subscription/Subscription";
 const subscription = () => {
   const subscriptionArray = [
     {
-      plan: "STARTER",
-      price: "$5/mo",
+      plan: "启动套餐",
+      price: "$5/月",
       popular: "",
-      service: ["Automated Reporting", "Faster Processing", "Customizations"],
+      service: ["自动报告", "处理速度更快", "定制化"],
       info: "Literally you probably haven't heard of them jean shorts.",
     },
     {
-      plan: "BASIC",
-      price: "$15/mo",
+      plan: "基本套餐",
+      price: "$15/月",
       popular: "POPULAR",
-      service: [
-        "Everything in Starter",
-        "100 Builds",
-        "Progress Reports",
-        "Premium Support",
-      ],
+      service: ["启动套餐中的一切", "100 次构建", "进度报告", "高级支持"],
 
       info: "Literally you probably haven't heard of them jean shorts.",
     },
     {
-      plan: "PLUS",
-      price: "$25/mo",
+      plan: "PLUS套餐",
+      price: "$25/月",
       popular: "",
-      service: [
-        "Everything in Basic",
-        "Unlimited Builds",
-        "Advanced Analytics",
-        "Company Evaluations",
-      ],
+      service: ["基本套餐中的一切", "无限构建", "高级分析", "公司评价"],
 
       info: "Literally you probably haven't heard of them jean shorts.",
     },
@@ -44,8 +34,8 @@ const subscription = () => {
     <div className={Style.Subscription}>
       <div className={Style.Subscription_box}>
         <div className={Style.Subscription_box_info}>
-          <h1>💎 Subscription</h1>
-          <p>Pricing to fit the needs of any companie size.</p>
+          <h1>💎 订阅计划</h1>
+          <p>定价可满足任何规模公司的需求</p>
         </div>
 
         <div className={Style.Subscription_box_box}>

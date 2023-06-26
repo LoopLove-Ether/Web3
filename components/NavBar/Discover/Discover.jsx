@@ -13,36 +13,36 @@ const Discover = () => {
   //这些将是在我们不同的discover组件中显示的菜单
   const discover = [
     {
-      name: "Collection",
+      name: "市场",
       link: "collection",
     },
     {
-      name: "Search",
+      name: "搜索",
       link: "searchPage",
     },
     {
-      name: "Author Profile",
+      name: "卖家信息",
       link: "author",
     },
     {
-      name: "NFT Details",
+      name: "商品细节",
       link: "NFT-details",
     },
     {
-      name: "Account Setting",
+      name: "账户设置",
       link: "account",
     },
     {
-      name: "Upload NFT",
+      name: "上传商品",
       link: "uploadNFT",
     },
     //为用户提供多个用于连接他们的钱包的选项
+    // {
+    //   name: "Connect Wallet",
+    //   link: "connectWallet",
+    // },
     {
-      name: "Connect Wallet",
-      link: "connectWallet",
-    },
-    {
-      name: "Blog",
+      name: "博客",
       link: "blog",
     },
   ];

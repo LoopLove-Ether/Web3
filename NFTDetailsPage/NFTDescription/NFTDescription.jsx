@@ -26,9 +26,6 @@ import images from "../../img";
 import { Button } from "../../components/componentsindex.js";
 import { NFTTabs } from "../NFTDetailsIndex"; //这个组件是不同类型的用户进行切换
 
-//IMPORT SMART CONTRACT
-import { NFTMarketplaceContext } from "../../Context/NFTMarketplaceContext";
-
 const NFTDescription = ({ nft }) => {
   const [social, setSocial] = useState(false);
   const [NFTMenu, setNFTMenu] = useState(false);
@@ -102,9 +99,6 @@ const NFTDescription = ({ nft }) => {
       setHistory(true);
     }
   };
-
-  //SMART CONTRACT DATA
-  const { buyNFT, currentAccount } = useContext(NFTMarketplaceContext);
 
   return (
     <div className={Style.NFTDescription}>

@@ -19,64 +19,22 @@ import {
   // Video,
   Loader,
 } from "../components/componentsindex";
-import { getTopCreators } from "../TopCreators/TopCreators";
-
-//IMPORTING CONTRACT DATA
-//在我们调用之前我们必须接收该函数
-import { NFTMarketplaceContext } from "../Context/NFTMarketplaceContext";
 
 const Home = () => {
-  const { checkIfWalletConnected } = useContext(NFTMarketplaceContext);
-  useEffect(() => {
-    checkIfWalletConnected();
-  }, []);
-
-  const { fetchNFTs } = useContext(NFTMarketplaceContext);
-  //这两个状态变量到底代表什么
-  const [nfts, setNfts] = useState([]);
-  const [nftsCopy, setNftsCopy] = useState([]);
-
-  //每次重新加载页面的时候都调用这个函数
-  //解析Promise
-  useEffect(() => {
-    fetchNFTs().then((items) => {
-      setNfts(items.reverse()); //将从IPFS解析得到的items数组倒置放在nfts内
-      setNftsCopy(items); //我们不想更改源数组,所以在这里更改它的副本
-    });
-  }, []);
-
-  //CREATOR LIST
-  const creators = getTopCreators(nfts);
-
   return (
     <div className={Style.homePage}>
-      <HeroSection />
-      <Service />
+      {/* <HeroSection /> */}
+      {/* <Service /> */}
       <BigNFTSlider />
-      <Title
-        heading="Audio Collection"
-        paragraph="Discover the most outstanding NFTs in all topics of life."
-      />
+      <Title heading="音乐收藏品" paragraph="发现各个主题中最出色的加密音乐" />
       <AudioLive />
-      {creators.length == 0 ? (
-        <Loader />
-      ) : (
-        <FollowerTab TopCreator={creators} />
-      )}
       <Slider />
       <Collection />
-      <Title
-        heading="Featured NFTs"
-        paragraph="Discover the most outstanding NFTs in all topics of life."
-      />
-      <Filter />
-      {nfts.length == 0 ? <Loader /> : <NFTCard NFTData={nfts} />}
-      <Title
-        heading="Browse by category"
-        paragraph="Explore the NFTs in the most featured categories."
-      />
+      <Title heading="特色 NFTs" paragraph="发现各个主题中最优秀的NFT" />
+      <NFTCard />
+      <Title heading="按类别搜索" paragraph="探索最具特色的加密产品" />
       <Category />
-      <Subscribe />
+      {/* <Subscribe /> */}
       <Brand />
       {/* <Video /> */}
     </div>

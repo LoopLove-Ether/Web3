@@ -3,7 +3,7 @@
 
 /* 所有自定义主题颜色 */
 /* //THEME 1 */
-/* :root {
+:root {
   --icons-color: #4c5773;
   --icons-light-color: #4c577341;
   --icons-bg-color: #e2e6e9;
@@ -15,9 +15,9 @@
     -1rem -1rem 1rem var(--shadow-light-color);
   --box-shadow-2: 0rem 0rem 0rem var(--shadow-dark-color),
     -0.3rem -0.3rem 1rem var(--shadow-dark-color);
-} */
+}
 
-/* //THEME 11 */
+//THEME 11 */
 /* :root {
   --icons-color: #fff;
   --icons-light-color: #fff57;
@@ -31,7 +31,7 @@
 } */
 
 /* //THEME 2 */
-:root {
+/* :root {
   --icons-color: #ffdf2b;
   --icons-light-color: #ffdf2b57;
   --icons-bg-color: #ffdf2b;
@@ -44,10 +44,10 @@
   --box-shadow: 1px 1px 2px #ffdf2b, -1px -1px 2px #ffdf2b;
 
   --box-shadow-2: 1px 1px 2px #ffdf2b, -1px -1px 2px #ffdf2b;
-}
+} */
 
-/* //THEME 3 */
-/* :root {
+/* //THEME 3
+:root {
   --icons-color: #9001f5;
   --icons-light-color: #9001f557;
   --icons-bg-color: #9001f5;
@@ -59,7 +59,7 @@
   --box-shadow-2: 1px 1px 2px #9001f5, -1px -1px 2px #9001f5;
 } */
 
-/* //THEME 4 */
+//THEME 4 */
 /* :root {
   --icons-color: #ee0823;
   --icons-light-color: #ee082357;
@@ -73,33 +73,29 @@
 } */
 
 /* //THEME 5 */
-/* :root{
-  --icons-color: #B901AF;
-  --icons-light-color: #B901AF57;
-  --icons-bg-color: #B901AF;
+/* :root {
+  --icons-color: #b901af;
+  --icons-light-color: #b901af57;
+  --icons-bg-color: #b901af;
   --shadow-dark-color: #343334;
   --bg-shadow-dark-color: #575357;
   --shadow-light-color: #290222;
   --main-bg-color: #290222;
-  --box-shadow: 1px 1px 2px #B901AF,
-  -1px -1px 2px #B901AF;
-  --box-shadow-2:1px 1px 2px #B901AF,
-  -1px -1px 2px #B901AF;
+  --box-shadow: 1px 1px 2px #b901af, -1px -1px 2px #b901af;
+  --box-shadow-2: 1px 1px 2px #b901af, -1px -1px 2px #b901af;
 } */
 
 /* //THEME 6 */
-/* :root{
+/* :root {
   --icons-color: #945361;
   --icons-light-color: #94536157;
   --icons-bg-color: #945361;
   --shadow-dark-color: #484546;
   --bg-shadow-dark-color: #484546;
-  --shadow-light-color: #30154E;
-  --main-bg-color: #30154E;
-  --box-shadow: 1px 1px 2px #945361,
-  -1px -1px 2px #945361;
-  --box-shadow-2:1px 1px 2px #945361,
-  -1px -1px 2px #945361;
+  --shadow-light-color: #30154e;
+  --main-bg-color: #30154e;
+  --box-shadow: 1px 1px 2px #945361, -1px -1px 2px #945361;
+  --box-shadow-2: 1px 1px 2px #945361, -1px -1px 2px #945361;
 } */
 
 /* //THEME 7 */
@@ -118,18 +114,16 @@
 } */
 
 /* //THEME 8 */
-/* :root{
-  --icons-color: #FF5B3E;
-  --icons-light-color: #FF5B3E57;
-  --icons-bg-color: #FF5B3E;
+/* :root {
+  --icons-color: #ff5b3e;
+  --icons-light-color: #ff5b3e57;
+  --icons-bg-color: #ff5b3e;
   --shadow-dark-color: #373535;
   --bg-shadow-dark-color: #373535;
   --shadow-light-color: #282828;
   --main-bg-color: #282828;
-  --box-shadow: 1px 1px 2px #FF5B3E,
-  -1px -1px 2px #FF5B3E;
-  --box-shadow-2:1px 1px 2px #FF5B3E,
-  -1px -1px 2px #FF5B3E;
+  --box-shadow: 1px 1px 2px #ff5b3e, -1px -1px 2px #ff5b3e;
+  --box-shadow-2: 1px 1px 2px #ff5b3e, -1px -1px 2px #ff5b3e;
 } */
 
 /* //THEME 9 */

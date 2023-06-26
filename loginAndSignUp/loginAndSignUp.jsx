@@ -12,15 +12,15 @@ const loginAndSignUp = () => {
   const socialImage = [
     {
       social: images.facebook,
-      name: "Continue with Facebook",
+      name: "使用Facebook登陆",
     },
     {
       social: images.twitter,
-      name: "Continue with twitter",
+      name: "使用twitter登陆",
     },
     {
       social: images.facebook,
-      name: "Continue with Facebook",
+      name: "使用Facebook登陆",
     },
   ];
   return (
@@ -52,7 +52,7 @@ const loginAndSignUp = () => {
 
         <div className={Style.user_box_input}>
           <div className={Style.user_box_input_box}>
-            <label htmlFor="email">Email address</label>
+            <label htmlFor="email">邮箱地址</label>
             <input type="email" placeholder="example@emample.com" />
           </div>
 
@@ -61,16 +61,16 @@ const loginAndSignUp = () => {
               htmlFor="password"
               className={Style.user_box_input_box_label}
             >
-              <p>Password</p>
+              <p>密码</p>
               <p>
-                <a href="#">Forget password</a>
+                <a href="#">忘记密码</a>
               </p>
             </label>
             <input type="password" />
           </div>
         </div>
 
-        <Button btnName="Continue" classStyle={Style.button} />
+        <Button btnName="继续" classStyle={Style.button} />
       </div>
     </div>
   );

@@ -17,26 +17,23 @@ const contactus = () => {
   return (
     <div className={Style.contactus}>
       <div className={Style.contactus_box}>
-        <h1>Contact</h1>
+        <h1>联系</h1>
         <div className={Style.contactus_box_box}>
           <div className={Style.contactus_box_box_left}>
             <div className={Style.contactus_box_box_left_item}>
-              <h3>🗺 ADDRESS</h3>
-              <p>
-                Photo booth tattooed prism, portland taiyaki hoodie neutra
-                typewriter
-              </p>
+              <h3>🗺 地址</h3>
+              <p>美国旧金山甲骨文中心</p>
             </div>
             <div className={Style.contactus_box_box_left_item}>
-              <h3>💌 EMAIL</h3>
+              <h3>💌 邮箱</h3>
               <p>nc.example@example.com</p>
             </div>
             <div className={Style.contactus_box_box_left_item}>
-              <h3>☎ PHONE</h3>
+              <h3>☎ 联系电话</h3>
               <p>000-123-456-7890</p>
             </div>
             <div className={Style.contactus_box_box_left_item}>
-              <h3>🌏 SOCIALS</h3>
+              <h3>🌏 社交媒体</h3>
               <a href="#">
                 <TiSocialFacebook />
               </a>
@@ -57,15 +54,15 @@ const contactus = () => {
           <div className={Style.contactus_box_box_right}>
             <form>
               <div className={formStyle.Form_box_input}>
-                <label htmlFor="name">Full Name</label>
+                <label htmlFor="name">全名</label>
                 <input
                   type="text"
-                  placeholder="Kyrie Irving"
+                  placeholder="刘-宝梁"
                   className={formStyle.Form_box_input_userName}
                 />
               </div>
               <div className={formStyle.Form_box_input}>
-                <label htmlFor="email">Email</label>
+                <label htmlFor="email">个人邮箱</label>
                 <div className={formStyle.Form_box_input_box}>
                   <div className={formStyle.Form_box_input_box_icon}>
                     <HiOutlineMail />
@@ -78,18 +75,18 @@ const contactus = () => {
                 </div>
               </div>
               <div className={formStyle.Form_box_input}>
-                <label htmlFor="description">Message</label>
+                <label htmlFor="description">信息</label>
                 <textarea
                   name=""
                   id=""
                   cols="30"
                   rows="6"
-                  placeholder="something about yourself in few words"
+                  placeholder="你想要说的意见/建议"
                   className={Style.special}
                 ></textarea>
               </div>
               <Button
-                btnName="Send Message"
+                btnName="发送信息"
                 handleClick={() => {}}
                 classStyle={Style.button}
               />

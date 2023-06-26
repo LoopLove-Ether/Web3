@@ -7,24 +7,24 @@ import Style from "./HelpCenter.module.css";
 const HelpCenter = () => {
   const helpCenter = [
     {
-      name: "About",
+      name: "关于我们",
       link: "aboutus",
     },
     {
-      name: "Contact Us",
+      name: "联系我们",
       link: "contactus",
     },
     {
-      name: "Sign Up",
+      name: "注册(可选)",
       link: "signUp",
     },
     {
-      name: "LogIn",
+      name: "登陆(可选)",
       link: "login",
     },
     //subscription我们想要设置为可选的,这样可以为NFT创建者提供额外功能
     {
-      name: "Subscription",
+      name: "订阅",
       link: "subscription",
     },
   ];

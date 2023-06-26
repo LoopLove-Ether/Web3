@@ -33,8 +33,8 @@ const Category = () => {
                 <BsCircleFill />
               </span>
               <div className={Style.category_box_title_info}>
-                <h4>Enterainment</h4>
-                <small>1995 NFTS</small>
+                <h4>Web3</h4>
+                <small>2008 BTCs</small>
               </div>
             </div>
           </div>

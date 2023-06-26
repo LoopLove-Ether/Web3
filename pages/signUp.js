@@ -8,10 +8,10 @@ const signUp = () => {
   return (
     <div className={Style.login}>
       <div className={Style.login_box}>
-        <h1>SignUp</h1>
+        <h1>注册</h1>
         <LoginAndSignUp />
         <p className={Style.login_box_para}>
-          New user? <a href="#">Create an account</a>
+          新用户? <a href="#">创建一个账户</a>
         </p>
       </div>
     </div>

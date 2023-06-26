@@ -17,16 +17,16 @@ const Form = () => {
       <div className={Style.Form_box}>
         <form>
           <div className={Style.Form_box_input}>
-            <label htmlFor="name">Username</label>
+            <label htmlFor="name">用户名</label>
             <input
               type="text"
-              placeholder="Kyrie Irving"
+              placeholder="刘宝*"
               className={Style.Form_box_input_userName}
             />
           </div>
 
           <div className={Style.Form_box_input}>
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email">个人邮箱</label>
             <div className={Style.Form_box_input_box}>
               <div className={Style.Form_box_input_box_icon}>
                 <HiOutlineMail />
@@ -40,19 +40,19 @@ const Form = () => {
           </div>
 
           <div className={Style.Form_box_input}>
-            <label htmlFor="description">Description</label>
+            <label htmlFor="description">个人描述</label>
             <textarea
               name=""
               id=""
               cols="30"
               rows="6"
-              placeholder="something about yourself in few words"
+              placeholder="可以简单描述下自己"
               className={Style.Form_box_input_description}
             ></textarea>
           </div>
 
           <div className={Style.Form_box_input}>
-            <label htmlFor="website">Website</label>
+            <label htmlFor="website">个人主页(可选)</label>
             <div className={Style.Form_box_input_box}>
               <div className={Style.Form_box_input_box_icon}>
                 <MdOutlineHttp />
@@ -60,7 +60,7 @@ const Form = () => {
 
               <input
                 type="text"
-                placeholder="website"
+                placeholder="DNS域名"
                 className={Style.Form_box_input_website}
               />
             </div>
@@ -127,7 +127,7 @@ const Form = () => {
 
           <div className={Style.Form_box_btn}>
             <Button
-              btnName="Upload profile"
+              btnName="上传个人资料"
               handleClick={() => {}}
               classStyle={Style.button}
             />

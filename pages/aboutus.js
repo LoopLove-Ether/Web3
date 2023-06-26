@@ -9,39 +9,39 @@ import images from "../img";
 const aboutus = () => {
   const founderArray = [
     {
-      name: "Niamh O'Shea",
-      position: "Co-founder and Chief Executive",
+      name: "刘宝翘",
+      position: "CFO",
       images: images.founder1,
     },
     {
-      name: "Danien Jame",
-      position: "Co-founder and Chief Executive",
+      name: "刘宝蹲",
+      position: "CTO",
       images: images.founder2,
     },
     {
-      name: "Orla Dwyer",
-      position: "Co-founder, Chairman",
+      name: "刘宝梁",
+      position: "CEO",
       images: images.founder3,
     },
     {
-      name: "Dara Frazier",
-      position: "Co-Founder, Chief Strategy Officer",
+      name: "刘宝猪",
+      position: "COO",
       images: images.founder4,
     },
   ];
 
   const factsArray = [
     {
-      title: "10 million",
-      info: "Articles have been public around the world (as of Sept. 30, 2021)",
+      title: "10亿",
+      info: "文章已在全球公开（截至2023年6月26日）",
     },
     {
       title: "100,000",
-      info: "Registered users account (as of Sept. 30, 2021)",
+      info: "注册用户数量（截至2023年6月26日）",
     },
     {
       title: "220+",
-      info: "Countries and regions have our presence (as of Sept. 30, 2021",
+      info: "我们业务覆盖的国家和地区（截至2023年6月26日）",
     },
   ];
   return (
@@ -49,11 +49,9 @@ const aboutus = () => {
       <div className={Style.aboutus_box}>
         <div className={Style.aboutus_box_hero}>
           <div className={Style.aboutus_box_hero_left}>
-            <h1>👋 About Us.</h1>
+            <h1>👋 关于我们.</h1>
             <p>
-              We’re impartial and independent, and every day we create
-              distinctive, world-class programmes and content which inform,
-              educate and entertain millions of people in the around the world.
+              我们是独立的开发团队，每一天我们都在创造独特的、世界一流的节目和内容，教育和娱乐世界各地数百万人
             </p>
           </div>
           <div className={Style.aboutus_box_hero_right}>
@@ -62,11 +60,7 @@ const aboutus = () => {
         </div>
 
         <div className={Style.aboutus_box_title}>
-          <h2>⛱ Founder</h2>
-          <p>
-            We’re impartial and independent, and every day we create
-            distinctive, world-class programmes and content
-          </p>
+          <h2>⛱ 创始人</h2>
         </div>
 
         <div className={Style.aboutus_box_founder}>
@@ -88,11 +82,7 @@ const aboutus = () => {
         </div>
 
         <div className={Style.aboutus_box_title}>
-          <h2>🚀 Fast Facts</h2>
-          <p>
-            We’re impartial and independent, and every day we create
-            distinctive, world-class programmes and content
-          </p>
+          <h2>🚀 速览</h2>
         </div>
 
         <div className={Style.aboutus_box_facts}>

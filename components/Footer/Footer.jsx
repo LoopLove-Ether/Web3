@@ -33,9 +33,8 @@ const Footer = () => {
             </a>
           </div>
           <p>
-            The world's first and largest digital marketplace for crypto
-            collectibles and non-fungible tokens (NFTs). Buy, sell, and discover
-            exclusive digital items.
+            世界上第一个也是最大的加密产品数字市场.
+            购买、出售和发现独家数字项目.
           </p>
 
           <div className={Style.footer_social}>
@@ -58,24 +57,23 @@ const Footer = () => {
         </div>
 
         <div className={Style.footer_box_discover}>
-          <h3>Discover</h3>
+          <h3>发现</h3>
           <Discover />
         </div>
 
         <div className={Style.footer_box_help}>
-          <h3>Help Center</h3>
+          <h3>帮助中心</h3>
           <HelpCenter />
         </div>
         <div className={Style.subscribe}>
-          <h3>Subscribe</h3>
+          <h3>订阅</h3>
           <div className={Style.subscribe_box}>
-            <input type="email" placeholder="Enter your mail *" />
+            <input type="email" placeholder="输入你的邮箱 *" />
             <RiSendPlaneFill className={Style.subscribe_box_send} />
           </div>
           <div className={Style.subscribe_box_info}>
             <p>
-              Discover, collect, and sell extraordinary NFTs OpenSea is the
-              world first and largest NFT marketplace
+              发现、收集和销售非凡的加密产品 世界上第一个也是最大的加密产品市场
             </p>
           </div>
         </div>

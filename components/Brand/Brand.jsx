@@ -17,12 +17,12 @@ const Brand = () => {
               <DiJqueryLogo />
             </a>
           </div>
-          <h1>Earn free crypto with Ciscrypt</h1>
-          <p>A creative agency that lead and inspire.</p>
+          <h1>使用 Ciscrypt 赚取免费加密货币</h1>
+          <p>一家具有领导力和启发力的创意机构</p>
 
           <div className={Style.Brand_box_left_btn}>
-            <Button btnName="Create" handleClick={() => {}} />
-            <Button btnName="Discover" handleClick={() => {}} />
+            <Button btnName="上架" handleClick={() => {}} />
+            <Button btnName="发现" handleClick={() => {}} />
           </div>
         </div>
         <div className={Style.Brand_box_right}>

@@ -12,7 +12,7 @@ import Style from "./collectionProfile.module.css";
 import images from "../../img";
 
 const collectionProfile = () => {
-  const cardArray = [1, 2, 3, 4];
+  const cardArray = [1, 2, 3];
   return (
     <div className={Style.collectionProfile}>
       <div className={Style.collectionProfile_box}>
@@ -42,12 +42,9 @@ const collectionProfile = () => {
         </div>
 
         <div className={Style.collectionProfile_box_middle}>
-          <h1>Awesome NFTs Collection</h1>
-          <p>
-            Karafuru is home to 5,555 generative arts where colors reign
-            supreme. Leave the drab reality and enter the world of Karafuru by
-            Museum of Toys.
-          </p>
+          <h1>神奇的数字市场</h1>
+          <p>刘宝梁拥有5,555 种以色彩为主的生成艺术</p>
+          <p>让我们离开单调的现实，进入刘宝梁的世界玩具博物馆</p>
 
           <div className={Style.collectionProfile_box_middle_box}>
             {cardArray.map((el, i) => (
@@ -55,7 +52,7 @@ const collectionProfile = () => {
                 className={Style.collectionProfile_box_middle_box_item}
                 key={i + 1}
               >
-                <small>Floor price</small>
+                <small>地板价</small>
                 <p>${i + 1}95,4683</p>
                 <span>+ {i + 2}.11%</span>
               </div>

@@ -39,15 +39,11 @@ const AudioCard = () => {
                 className={Style.audioCard_box_like_icon_unlike}
               />
             )}
-
             <span>24</span>
           </div>
 
           <div className={Style.audioCard_box_time}>
-            <div className={Style.audioCard_box_like_time_remaing}>
-              <small>Reaming time</small>
-              <h5>3h : 15m :20s</h5>
-            </div>
+            <div className={Style.audioCard_box_like_time_remaing}></div>
           </div>
         </div>
 
@@ -71,9 +67,9 @@ const AudioCard = () => {
 
         <div className={Style.audioCard_box_details}>
           <div className={Style.audioCard_box_details_info}>
-            <h4>NFT music #1123</h4>
+            <h4>数字音乐 #1123</h4>
             <div className={Style.audioCard_box_details_info_price}>
-              <small>Price</small>
+              <small>价格</small>
               <p>$3,221.33</p>
             </div>
           </div>

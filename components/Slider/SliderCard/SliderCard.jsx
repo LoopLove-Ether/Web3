@@ -22,7 +22,7 @@ const SliderCard = ({ el, i }) => {
           />
         </motion.div>
         <div className={Style.sliderCard_box_title}>
-          <p>NFT Video #1245</p>
+          <p>数字电影 #1245</p>
           <div className={Style.sliderCard_box_title_like}>
             <LikeProfile />
             <small>1 of 100</small>
@@ -31,12 +31,12 @@ const SliderCard = ({ el, i }) => {
 
         <div className={Style.sliderCard_box_price}>
           <div className={Style.sliderCard_box_price_box}>
-            <small>Current Bid</small>
+            <small>当前价格</small>
             <p>1.000 ETH</p>
           </div>
 
           <div className={Style.sliderCard_box_price_time}>
-            <small>Remaining time</small>
+            <small>剩余时间</small>
             <p>3h : 15m : 20s</p>
           </div>
         </div>
